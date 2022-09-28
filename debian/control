@@ -1,0 +1,41 @@
+Source: colorspacious
+Section: python
+Priority: optional
+Maintainer: Sandro Tosi <morph@debian.org>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper-compat (= 9), dh-python,
+               python3-all,
+               python3-numpy,
+               python3-setuptools,
+               python3-sphinx,
+Standards-Version: 4.4.1
+Homepage: https://github.com/njsmith/colorspacious
+Vcs-Git: https://salsa.debian.org/python-team/modules/colorspacious.git
+Vcs-Browser: https://salsa.debian.org/python-team/modules/colorspacious
+
+Package: python3-colorspacious
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends},
+Recommends: ${python3:Recommends}
+Suggests: ${python3:Suggests}
+Description: library for doing colorspace conversions - Python 3.x
+ Colorspacious is a powerful, accurate, and easy-to-use library for
+ performing colorspace conversions.
+ .
+ In addition to the most common standard colorspaces (sRGB, XYZ, xyY,
+ CIELab, CIELCh), we also include: color vision deficiency ("color
+ blindness") simulations using the approach of Machado et al (2009); a
+ complete implementation of `CIECAM02
+ <https://en.wikipedia.org/wiki/CIECAM02>`_; and the perceptually
+ uniform CAM02-UCS / CAM02-LCD / CAM02-SCD spaces proposed by Luo et al
+ (2006).
+ .
+ This package contains the python 3 version of colorspacious
+
+#Package: python-colorspacious-doc
+#Section: doc
+#Architecture: all
+#Priority: extra
+#Depends: ${misc:Depends}, ${sphinxdoc:Depends}
+#Description: documentation for the colorspacious Python library
+# This package provides documentation for colorspacious

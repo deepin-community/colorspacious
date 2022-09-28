@@ -1,0 +1,44 @@
+colorspacious (1.1.2-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Convert git repository from git-dpm to gbp layout
+  * d/control: Remove trailing whitespaces
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #936319
+  * debian/control
+    - bump Standards-Version to 4.4.1 (no changes needed)
+  * debian/copyright
+    - extend packaging copyright years
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 13 Nov 2019 17:29:58 -0500
+
+colorspacious (1.1.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+
+  [ Sandro Tosi ]
+  * New upstream release
+  * debian/copyright
+    - extend packaging copyright years
+  * debian/control
+    - bump Standards-Version to 4.1.4 (no changes needed)
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 08 Jun 2018 13:58:25 -0400
+
+colorspacious (1.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/copyright
+    - update copyright holders
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 10 Dec 2016 12:31:43 -0500
+
+colorspacious (1.0.0-1) unstable; urgency=low
+
+  * Initial release; Closes: 837435
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 18 Sep 2016 18:48:37 +0000

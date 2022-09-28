@@ -1,0 +1,15 @@
+#! /usr/bin/make -f
+
+export LC_ALL=C.UTF-8
+
+export PYBUILD_NAME=colorspacious
+%:
+	dh $@ --with python3,sphinxdoc --buildsystem=pybuild
+
+#override_dh_auto_build-indep:
+#ifeq (,$(filter nodoc,$(DEB_BUILD_OPTIONS)))
+#	cd doc && \
+#	PYTHONPATH=$(CURDIR) http_proxy='http://127.0.0.1:9/' https_proxy='https://127.0.0.1:9/' \
+#	sphinx-build -N -E -T -b html . $(CURDIR)/.pybuild/docs/html/
+#	rm -rf $(CURDIR)/.pybuild/docs/html/.doctrees
+#endif
