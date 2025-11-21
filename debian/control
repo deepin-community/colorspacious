@@ -1,17 +1,22 @@
 Source: colorspacious
 Section: python
 Priority: optional
-Maintainer: Sandro Tosi <morph@debian.org>
-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Build-Depends: debhelper-compat (= 9), dh-python,
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Étienne Mollier <emollier@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-python3,
+               dh-sequence-sphinxdoc,
                python3-all,
                python3-numpy,
                python3-setuptools,
                python3-sphinx,
-Standards-Version: 4.4.1
+               python3-pytest <!nocheck>
+Standards-Version: 4.7.0
 Homepage: https://github.com/njsmith/colorspacious
-Vcs-Git: https://salsa.debian.org/python-team/modules/colorspacious.git
-Vcs-Browser: https://salsa.debian.org/python-team/modules/colorspacious
+Vcs-Git: https://salsa.debian.org/python-team/packages/colorspacious.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/colorspacious
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-pybuild
 
 Package: python3-colorspacious
 Architecture: all
@@ -23,14 +28,12 @@ Description: library for doing colorspace conversions - Python 3.x
  performing colorspace conversions.
  .
  In addition to the most common standard colorspaces (sRGB, XYZ, xyY,
- CIELab, CIELCh), we also include: color vision deficiency ("color
+ CIELab, CIELCh), it also includes: color vision deficiency ("color
  blindness") simulations using the approach of Machado et al (2009); a
  complete implementation of `CIECAM02
  <https://en.wikipedia.org/wiki/CIECAM02>`_; and the perceptually
  uniform CAM02-UCS / CAM02-LCD / CAM02-SCD spaces proposed by Luo et al
  (2006).
- .
- This package contains the python 3 version of colorspacious
 
 #Package: python-colorspacious-doc
 #Section: doc

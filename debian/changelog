@@ -1,3 +1,52 @@
+colorspacious (1.1.2-6) unstable; urgency=medium
+
+  * syntax-warning.patch: fix Python SyntaxWarning. (Closes: #1085424)
+  * d/control: declare compliance to standards version 4.7.0.
+  * d/salsa-ci.yml: new: explicit Salsa CI file.
+
+ -- Étienne Mollier <emollier@debian.org>  Fri, 29 Nov 2024 22:47:23 +0100
+
+colorspacious (1.1.2-5) unstable; urgency=medium
+
+  * d/control: add myself to uploaders. (Closes: #1065243)
+  * Set Rules-Requires-Root: no.
+  * d/control: declare compliance to standards version 4.6.2.
+  * d/copyright: add missing terms for BSD-3-Clauses.
+  * d/watch: bump to version 4.
+  * d/control: minor fixups in package description.
+  * d/{control,rules}: move to dh-sequence-*.
+  * pytest.patch: new: port test items to pytest.
+  * d/{control,rules}: support autodep8 pybuild tests.
+
+ -- Étienne Mollier <emollier@debian.org>  Sat, 16 Mar 2024 17:17:54 +0100
+
+colorspacious (1.1.2-4) unstable; urgency=medium
+
+  * orphan
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 02 Mar 2024 02:59:34 -0500
+
+colorspacious (1.1.2-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+  * debian/copyright
+    - extend packaging copyright years
+  * debian/control
+    - bump Standards-Version to 4.6.0.1 (no changes needed)
+
+  [ Debian Janitor ]
+  * Bump debhelper from deprecated 9 to 13.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 23 Apr 2022 14:51:12 -0400
+
 colorspacious (1.1.2-2) unstable; urgency=medium
 
   [ Ondřej Nový ]
